@@ -1,0 +1,79 @@
+MEDIAMINE - ALGORITHM COMPLEXITY
+
+CO1 / STRING SEARCH
+
+1. Naive String Search
+Time: O(n * m)
+Space: O(1)
+
+2. KMP
+Time: O(n + m)
+Space: O(m)
+
+3. Z-Function
+Time: O(n + m)
+Space: O(n + m)
+
+4. Rabin-Karp
+Average Time: O(n + m)
+Worst Time: O(n * m)
+Space: O(1)
+
+5. Aho-Corasick
+Time: O(n + total pattern length + number of matches)
+Space: O(total pattern length)
+
+
+CO2 / SUFFIX STRUCTURES
+
+6. Suffix Array
+Current implementation:
+Time: O(n^2 log n) approximately
+Space: O(n)
+
+7. LCP / Kasai Algorithm
+Time: O(n)
+Space: O(n)
+
+8. Suffix Automaton
+Construction: O(n) for fixed alphabet
+Substring Search: O(m)
+Space: O(n)
+
+
+CO3 / DYNAMIC PROGRAMMING
+
+9. Edit Distance
+Time: O(m * n)
+Space: O(m * n)
+
+10. Needleman-Wunsch
+Time: O(m * n)
+Space: O(m * n)
+
+11. Smith-Waterman
+Time: O(m * n)
+Space: O(m * n)
+
+12. Bitmask DP
+Time: O(2^n * n)
+Space: O(1) in current implementation
+
+13. Matrix Chain DP
+Time: O(n^3)
+Space: O(n^2)
+
+
+PROJECT APPLICATION
+
+Edit Distance:
+Used for search-query correction.
+
+String Search Algorithms:
+Used for searching keywords in media title/content.
+
+Suffix Structures:
+Used to demonstrate efficient substring-oriented text processing.
+
+Aho-Corasick:
+Suitable for searching multiple keywords simultaneously.
